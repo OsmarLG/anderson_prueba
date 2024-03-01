@@ -20,7 +20,7 @@ include_once $viewPath . '/layouts/header.php';
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title"><?php echo $proyecto['name']; ?></h5>
-                                <a href="views/projects/show.php?id=<?php echo $proyecto['id']; ?>" class="btn btn-primary">Ver Detalles</a>
+                                <a href="<?php echo controller::$rutaAPP?>index.php?action=show_project&id=<?php echo $proyecto['id']; ?>" class="btn btn-primary">Ver Detalles</a>
                             </div>
                         </div>
                     </div>

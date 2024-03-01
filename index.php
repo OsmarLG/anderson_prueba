@@ -10,6 +10,9 @@ if ($mvc->init_login()) {
             case 'home':
                 $mvc->home();
                 break;
+            case 'show_project':
+                $mvc->show_project();
+                break;
             case 'logout':
                 $mvc->logout();
                 break;

@@ -1,4 +1,5 @@
-include_once 'getData.php';
+<?php
+    include_once(__dir__.'/getData.php');
 
 class Project {
     private $dbData;
@@ -11,4 +12,11 @@ class Project {
         $query = "SELECT * FROM projects";
         return $this->dbData->selectQuery($query);
     }
+
+    public function getProject($id){
+        $query = "SELECT * FROM projects as p where p.id = $id";
+        return $this->dbData->selectQuery($query);
+    }
 }
+
+?>
