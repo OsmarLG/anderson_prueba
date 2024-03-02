@@ -21,7 +21,7 @@ include_once $viewPath . '/layouts/header.php';
                             </div>
                             <button type="submit" class="btn btn-primary btn-block">Iniciar sesión</button>
                             <div class="text-center mt-3">
-                                <p class="mb-0">¿No tienes cuenta? <a href="register.php">Regístrate aquí</a></p>
+                                <p class="mb-0">¿No tienes cuenta? <a href="<?php echo controller::$rutaAPP?>index.php?action=register">Regístrate aquí</a></p>
                             </div>
                         </form>
                     </div>

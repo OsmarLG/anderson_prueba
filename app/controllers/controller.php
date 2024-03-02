@@ -28,11 +28,14 @@
             $projectId = $_GET['id'] ?? null;
             $projectModel = new Project();
             $proyecto = $projectModel->getProject($projectId);
-            
+
             include_once(__dir__."/../views/projects/show.php");
         }
         public function login() {
             include_once(__dir__."/../views/login/login.php");
+        }
+        public function register() {
+            include_once(__dir__."/../views/register/register.php");
         }
         public function validate() {
             include_once(__dir__."/../views/login/php/validate.php");

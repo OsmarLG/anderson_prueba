@@ -28,6 +28,8 @@ if ($mvc->init_login()) {
         switch ($_GET['action']) {
             case 'login':
                 $mvc->login();
+            case 'register':
+                $mvc->register();
             case 'validate':
                 $mvc->validate();
                 break;
