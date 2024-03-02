@@ -7,4 +7,4 @@ Una vez clonado el proyecto damos un composer update para actualizar las libreri
 Si estas usando laragon o xampp entonces puedes correrlo localmente activando el servidor y llendo a la ruta
     http://localhost/anderson_prueba/
 
-La base de datos sera creada con el archivo .sql que viene en la raiz del proyecto llamado 'create_db.sql'
+La base de datos sera creada con el archivo .sql que viene en la raiz del proyecto llamado 'create_db.sql' para mysql

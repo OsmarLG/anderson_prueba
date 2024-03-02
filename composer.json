@@ -1,0 +1,17 @@
+{
+    "name": "vendor/andeson_prueba",
+    "description": "Prueba tecnica en PHP Nativo",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Vendor\\AndesonPrueba\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "osmarliera",
+            "email": "osmar2001lg@gmail.com"
+        }
+    ],
+    "require": {}
+}
