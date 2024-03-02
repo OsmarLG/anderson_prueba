@@ -3,9 +3,9 @@ Nombre: CRUD_PRUEBA
 Descripcion: En este proyecto haré solamente proyectos que tengas tareas, donde tendremos un crud para proyectos, y otro para tareas.
 
 Roles y Permisos:
-    - Administrador: All permision para ambos cruds
-    - Editor: Solo agregar, editar y eliminar tareas a los proyectos creados por el Administrador
-    - Usuario: solo cambiar de status = 'En Proceso' y status = 'Terminada' las tareas como completas
+    - ADMIN: All permision para ambos cruds
+    - EDITOR: Solo agregar, editar y eliminar tareas a los proyectos creados por el Administrador
+    - WORKER: solo cambiar de status = 'En Proceso' y status = 'Terminada' las tareas como completas
 
 Requerimientos funcionales:
     -> Proyectos:
@@ -45,4 +45,8 @@ DataBase (MySQL)
 Vistas
     Home
         -> Proyectos
+            ->Editar Proyecto
             -> Tareas
+                ->Editar Tarea
+    Login
+    Register
