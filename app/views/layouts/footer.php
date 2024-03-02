@@ -47,6 +47,48 @@
                     }
                 });
             });
+
+            $('#registerForm').submit(function(event){
+                event.preventDefault();
+                $.ajax({
+                    dataType:"json",
+                    url:"<?php echo controller::$rutaAPP?>index.php?action=register_validate",
+                    type:"POST",
+                    data:{
+                        name:$('#name').val(), 
+                        user:$('#username').val(), 
+                        pass:$('#password').val(), 
+                        confirm_pass:$('#confirm_password').val(), 
+                        rol:$('#rol').val()
+                    },
+                    success: function(response) {
+                        if (response.success) {
+                            Swal.fire({
+                                icon: 'success',
+                                title: '¡Registro exitoso!',
+                                text: '¡Bienvenido!',
+                                timer: 800, 
+                                showConfirmButton: false 
+                            }).then(function() {
+                                window.location.href = "<?php echo controller::$rutaAPP?>index.php?action=home";
+                            });
+                        } else {
+                            Swal.fire({
+                                icon: 'error',
+                                title: 'Error',
+                                text: response.error
+                            });
+                        }
+                    },
+                    error: function(xhr, status, error) {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Error',
+                            text: 'Hubo un problema al registrarse. Por favor, inténtalo de nuevo más tarde.'
+                        });
+                    }
+                });
+            });
         });
     </script>
 </body>

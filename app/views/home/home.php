@@ -8,7 +8,7 @@ include_once $viewPath . '/layouts/header.php';
         <h2>Proyectos</h2>
         <br>
         <?php if ($_SESSION['user']['rol'] == 'ADMIN'): ?>
-            <a href="views/projects/create.php" class="btn btn-primary">Crear Nuevo Proyecto</a>
+            <a href="<?php echo controller::$rutaAPP?>index.php?action=create_project" class="btn btn-primary">Crear Nuevo Proyecto</a>
             <br>
             <br>
         <?php endif; ?>

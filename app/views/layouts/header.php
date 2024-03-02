@@ -26,6 +26,25 @@
         .navbar {
             padding: 0.5rem 1rem;
         }
+
+        .nav-link svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        @media (min-width: 768px) {
+            .nav-link svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .nav-link svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
     </style>
 </head>
 <body>
